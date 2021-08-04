@@ -1,0 +1,44 @@
+html, body {
+    padding: 2px;
+ }
+
+ body {
+     display: grid;
+     grid-template-rows: .1fr .30fr .60fr .05fr;
+     grid-template-columns: 1fr;
+     grid-template-areas: "header" "main" "map"  "footer";
+     justify-content: center;
+     background-color: rgb(86, 109, 86);
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     border-style: dashed double none;;
+     border-color:rgb(230, 156, 45);
+ }
+
+ header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: .2fr .6fr .2fr;
+    justify-content: right;
+    background-color: blanchedalmond;
+ }
+
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: blanchedalmond;
+    height: 1vh;
+}
+
+#map {
+    grid-area: map;
+    height: 35vh;
+    border-style: inset;
+    border-color: rgb(75, 43, 28);
+    border-width: 1vh;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: blanchedalmond;
+    font-size: smaller;
+}
